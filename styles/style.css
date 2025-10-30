@@ -1,0 +1,104 @@
+/* Global styles and variable CSS */
+:root {
+  --bg-color: #f5f8fa;
+  --text-color: #333;
+  --primary-color: #0066cc;
+  --muted-color: #555;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Tata letak kontainer */
+.resume {
+  display: flex;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 35%;
+  background: #e7f0f9;
+  padding: 20px;
+}
+
+/* Area konten utama */
+.main {
+  width: 65%;
+  padding: 20px 30px;
+}
+
+/* Foto profil */
+.photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+/* Judul bagian */
+h2,
+h3 {
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+/* Kotak bagian */
+.contact,
+.languages,
+.skills,
+.education,
+.experience,
+.achievements {
+  margin-bottom: 20px;
+}
+
+/* Daftar tanpa tanda peluru */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  margin-bottom: 6px;
+}
+
+/* Nama dan jabatan */
+.name {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.title {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--muted-color);
+  margin-bottom: 15px;
+}
+
+/* Judul subbagian */
+.section-title {
+  font-weight: bold;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+/* Gambar responsif */
+img {
+  max-width: 100%;
+  height: auto;
+}
